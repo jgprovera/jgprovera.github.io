@@ -1,122 +1,136 @@
+/* =========================
+ *  RESET
+ = *======================== */
+
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* =========================
+ *  BODY
+ = *======================== */
 
 body {
-    background-color: #111;
-    color: #f1f1f1;
+    background-color: #111827;
+    color: #e5e7eb;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
+    line-height: 1.8;
 }
 
-/* Banner */
+/* =========================
+ *  BANNER
+ = *======================== */
 
 .banner {
     text-align: center;
-    margin-bottom: 40px;
+    padding: 0.75rem 1rem;
 }
 
 .banner img {
     width: 100%;
-    max-width: 450px;
-    height: auto;
-    display: inline-block;
-    border-radius: 8px;
+    max-width: 800px;
+    max-height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Contenido principal */
+/* =========================
+ *  CONTENIDO PRINCIPAL
+ = *======================== */
 
 main {
-    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
 }
+
+/* =========================
+ *  SECCIONES
+ = *======================== */
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #374151;
 }
 
-/* Títulos */
+section:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+ *  TÍTULOS
+ = *======================== */
 
 h2 {
+    color: #60a5fa;
     font-size: 1.8rem;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-    color: #4da6ff;
+    margin-bottom: 1.2rem;
 }
 
 h3 {
-    margin-bottom: 20px;
-    color: #cccccc;
+    color: #d1d5db;
     font-size: 1.1rem;
     font-weight: normal;
+    margin-bottom: 1.5rem;
 }
 
-/* Texto */
+/* =========================
+ *  TEXTO
+ = *======================== */
 
 p {
+    margin-bottom: 1rem;
     text-align: justify;
-    margin-bottom: 20px;
-    line-height: 1.8;
 }
 
-/* Enlaces */
+strong,
+b {
+    color: #f3f4f6;
+}
+
+/* =========================
+ *  ENLACES
+ = *======================== */
 
 a {
-    color: #4da6ff;
+    color: #93c5fd;
     text-decoration: none;
-    word-break: break-word;
+    transition: 0.2s ease;
 }
 
 a:hover {
+    color: #bfdbfe;
     text-decoration: underline;
 }
 
-/* Código */
-
-code {
-    background-color: #222;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: monospace;
-    color: #00ff99;
-}
-
-/* Negritas */
-
-b {
-    color: #ffffff;
-}
-
-/* Responsive */
+/* =========================
+ *  RESPONSIVE
+ = *======================== */
 
 @media (max-width: 768px) {
-    body {
-        padding: 25px 15px;
-    }
 
     .banner {
-        margin-bottom: 30px;
+        padding: 0.5rem;
     }
 
     .banner img {
-        max-width: 320px;
+        max-width: 100%;
+        max-height: 90px;
+    }
+
+    main {
+        padding: 1.5rem;
     }
 
     h2 {
         font-size: 1.5rem;
     }
 
-    h3 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 0.98rem;
-        text-align: justify;
+    body {
+        font-size: 0.95rem;
     }
 }
