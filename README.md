@@ -1,6 +1,6 @@
 # provera.uy
 
-Sitio web técnico desarrollado para compilar proyectos, documentación.
+Sitio web técnico desarrollado para compilar proyectos y documentación.
 
 El portfolio funciona como compendio de los repositorios y proyectos desarrollados.
 
