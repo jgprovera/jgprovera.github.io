@@ -72,10 +72,15 @@ h2 {
 }
 
 h3 {
-    color: #d1d5db;
-    font-size: 1.1rem;
-    font-weight: normal;
-    margin-bottom: 1.5rem;
+    color: #60a5fa;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+article {
+    margin-bottom: 2.5rem;
 }
 
 /* =========================
